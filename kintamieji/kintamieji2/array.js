@@ -1,4 +1,5 @@
 // Kintamieji: array
+<p> Kintamieji: arejus </p>
 
 const fruits = ["apple", "banana", "grapes"];
 const vegetable = ["tomato", "potato", "brocoli"];
