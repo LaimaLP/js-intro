@@ -1,11 +1,19 @@
 {
   "name": "js-intro",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LaimaLP/js-intro.git"
+  },
   "author": "Laima Pamaiva",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LaimaLP/js-intro/issues"
+  },
+  "homepage": "https://github.com/LaimaLP/js-intro#readme",
+  "description": ""
 }
