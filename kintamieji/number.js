@@ -21,7 +21,7 @@ const x3 = 3;
 
 const x4 = 4;
 
-x4 = 2
 
-console.log(amzius);
+
+console.log(x2 +x3 + x1 -x4*x2);
 console.log(pinigine);
