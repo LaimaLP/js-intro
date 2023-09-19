@@ -15,3 +15,11 @@
 
 
 // Single line comment
+
+/* 
+Multi
+line comment
+*/
+
+
+Labas rytas Lietuva!
