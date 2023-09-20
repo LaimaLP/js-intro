@@ -5,6 +5,7 @@
   "scripts": {
     "string": "nodemon ./kintamieji/string.js",
     "number": "nodemon ./kintamieji/number.js",
+    "aritmetics": "nodemon ./kintamieji/aritmetics.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
