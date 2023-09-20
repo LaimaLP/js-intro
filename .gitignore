@@ -1,0 +1,7 @@
+node_modules
+.vscode
+# tavo asmeniniai pakitimai
+.DS_Store 
+# kruva info apie tavo pc saugo
+# butini visuose projektuose visi trys, "slaptumui"
+# lygyje kur ir json failas

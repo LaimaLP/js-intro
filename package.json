@@ -15,5 +15,8 @@
     "url": "https://github.com/LaimaLP/js-intro/issues"
   },
   "homepage": "https://github.com/LaimaLP/js-intro#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
 }
