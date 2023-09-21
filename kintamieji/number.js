@@ -62,3 +62,23 @@ console.log(exp4, exp5, exp6, exp7, exp8);
 console.log(2 + 2 * 2, amzius, 3+3*3, pinigine);
 const exp9 = 3**3;
 console.log(exp9);
+
+// Nenormalus skaiciai, nera skaicius, tik savoka, konceptas. Infinitty
+const begalybe = Infinity;
+const minusBegalybe = -Infinity;
+
+const x = 5 / 0;
+console.log(x);
+
+const k= -5 / 0;
+console.log(k);
+
+//not-a-number - NaN
+
+const n= NaN;
+console.log(n, NaN);
+console.log(7*"8");
+console.log(7+"8");
+
+const liekana = 7 % 5;
+console.log(liekana)
