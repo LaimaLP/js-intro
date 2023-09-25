@@ -9,7 +9,15 @@ Inicijavimo budas:
 - const (default)
 - let (jei kinta info)
 - var (niekada)
+
+
+Matematiniai operatoriai:
++, -, *, /, **, %
++=, -=, *=, /=, **=, %=
+
 */
+
+
 
 const amzius = 99;
 let pinigine = 0;
@@ -82,3 +90,122 @@ console.log(7+"8");
 
 const liekana = 7 % 5;
 console.log(liekana)
+
+console.clear()
+
+
+let wallet = 0;
+console.log(`wallet:`, wallet);
+
+wallet = wallet + 5;
+console.log(`wallet:`, wallet);
+
+wallet += 5;
+wallet += 5;
+wallet += 5;
+console.log(`wallet:`, wallet);
+
+console.log('------------');
+
+wallet = wallet -2;
+console.log(`walet:`, wallet);
+
+wallet -= 2;
+wallet -= 2;
+wallet -= 2;
+console.log(`walet:`, wallet);
+
+wallet = wallet * 4;
+console.log(`walet:`, wallet);
+
+wallet += 2;
+wallet *= 4;
+console.log(`walet:`, wallet);
+
+wallet **= 2;
+console.log(`walet:`, wallet);
+
+wallet /= 10000;
+console.log(`walet:`, wallet);
+
+
+const skaicius = 256;
+const daliklis = 10;
+const liekana3 = skaicius % daliklis;
+console.log(`liekana:`, liekana3);
+const sveikaDalis = (skaicius- liekana3)/ daliklis;
+console.log(sveikaDalis);
+
+console.log(sveikaDalis, `*`, daliklis, '+', liekana3, '=', skaicius);
+
+console.clear();
+
+let index = 0;
+console.log(`index`, index);
+
+index = index + 1; 
+console.log(`index:`, index);
+
+index += 1; 
+console.log(`index:`, index);
+
+index++;
+console.log(`index:`, index);
+
+++index;
+console.log(`index:`, index);
+
+
+let i = 0;
+console.log(i); // -> 0
+console.log(i++); //-> 1
+console.log(i); // -> 1
+console.log(i++); // -> 2
+console.log(i); //-> 2
+console.log(i++);
+console.log(i);
+console.log(i++);
+console.log(i);
+console.log(i++);
+console.log(i); 
+console.log('------------'); 
+
+let i2 = 0;
+console.log(i2);
+console.log(++i2);
+console.log(i2);
+console.log(++i2);
+console.log(i2);
+console.log(++i2);
+console.log(i2);
+console.log(++i2);
+console.log(i2);
+console.log(++i2);
+console.log(i2);
+
+console.log('------------');
+
+let m2 = 0;
+console.log(--m2); // 0 -> -1
+console.log(--m2); // -1 -> -2
+console.log(--m2);
+console.log(--m2);
+console.log(--m2);
+console.log(m2);
+    
+    console.log(`--------`);
+
+    let m = 0;
+console.log(m--); // 0 -> -1
+console.log(`--------`);
+
+console.log(m--); // -1 -> -2
+console.log(m--);
+console.log(m--);
+console.log(m--);
+console.log(m);
+
+console.clear();
+
+//     let klausimas = 10;
+//     console.log(++klausimas++);
