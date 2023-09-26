@@ -209,3 +209,13 @@ console.clear();
 
 //     let klausimas = 10;
 //     console.log(++klausimas++);
+
+let h= 0.2+0.4;
+console.log(h);
+
+let h2= (0.2*10+0.4*10)/10;
+console.log(h2);
+
+x+++a
+x++ + a
+x + ++a
