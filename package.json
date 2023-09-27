@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "operatoriai": "nodemon ./palyginimas/operatoriai.js",
     "namuDarbai": "nodemon ./palyginimas/namuDarbai.js",
     "if": "nodemon ./palyginimas/if.js",
     "function": "nodemon ./funkcijos/function.js",
