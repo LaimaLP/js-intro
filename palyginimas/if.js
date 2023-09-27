@@ -42,8 +42,7 @@ const day = 14;
 
 if (day % 7 == 1) {
   console.log(`Pirmadienis`);
-}
-if (day % 7 == 2) {
+}else if (day % 7 == 2) {
   console.log(`Antradienis`);
 } else if (day % 7 == 3) {
   console.log(`Treciadienis!`);
@@ -123,15 +122,54 @@ const temp = 25;
 const kadaSilta = 20;
 const arAsSuStriuke = true;
 
-if (parosMetas === "diena" && arLyja === true && temp >= kadaSilta) {
-  console.log("Einam sokti lietuje!");
-} else if (parosMetas === "diena" && arLyja === false) {
-  console.log(`Eiline diena rojuje`);
-} else if (parosMetas === "naktis" && arLyja === true) {
-  console.log(`Sedim namie!`);
-} else if (parosMetas === "naktis" && arLyja === false) {
-  console.log(`Sedim namie!`);
+if (parosMetas === 'diena' && arLyja && temp >= kadaSilta) {
+  console.log('Einam sokti lietuje! 😏');
+} else if (parosMetas === 'diena' && arLyja && temp < kadaSilta) {
+  console.log('Saltas lietus... niekur neisiu sokti... 💧');
+} else if (parosMetas === 'diena' && !arLyja && temp >= kadaSilta) {
+  console.log('Eiline diena rojuje ✌');
+} else if (parosMetas === 'diena' && !arLyja && temp < kadaSilta) {
+  console.log('Eiline diena rojuje.. nors ir nelabai silta.. ✌');
+} else if (parosMetas === 'naktis' && arLyja && temp >= kadaSilta) {
+  console.log('Sedim namie, bet gal ir galima butu iseiti 👀');
+} else if (parosMetas === 'naktis' && arLyja && temp < kadaSilta) {
+  console.log('Sedim namie!!! 👀');
+} else if (parosMetas === 'naktis' && !arLyja && temp >= kadaSilta) {
+  console.log('Galim eiti paziureti zvaigzdiu ⭐');
+} else if (parosMetas === 'naktis' && !arLyja && temp < kadaSilta) {
+  console.log('Gal eisiu miegoti ⭐');
 }
+
+if (parosMetas === 'diena') {
+  if (arLyja) {
+      if (temp >= kadaSilta) {
+          console.log('Einam sokti lietuje! 😏');
+      } else {
+          console.log('Einam sokti lietuje! 😏');
+      }
+  } else {
+      if (temp >= kadaSilta) {
+          console.log('Eiline diena rojuje ✌');
+      } else {
+          console.log('Eiline diena rojuje ✌');
+      }
+  }
+} else {
+  if (arLyja) {
+      if (temp >= kadaSilta) {
+          console.log('Sedim namie 👀');
+      } else {
+          console.log('Sedim namie 👀');
+      }
+  } else {
+      if (temp >= kadaSilta) {
+          console.log('Galim eiti paziureti zvaigzdiu ⭐');
+      } else {
+          console.log('Galim eiti paziureti zvaigzdiu ⭐');
+      }
+  }
+} 
+
 
 if (parosMetas === "diena") {
   if (arLyja) {
@@ -234,7 +272,7 @@ console.log(-5 % 2);
 
 console.log("----------");
 
-const myInput = -3;
+const myInput = -0.5;
 
 if (myInput === 0) {
   console.log(`${myInput} irgi yra lyginis skaicius!`);
@@ -268,7 +306,16 @@ if (myInput === 0) {
   }
 }
 console.log("----------");
-// }else{
-// console.log(`nera lyginis skaicius.`);
 
-// console.log(`yra neigiamas lyginis skaicius.`)
+const myInput2 = -2
+
+if (myInput2 === 0) {
+  console.log(`${myInput2} irgi yra lyginis skaicius!`);
+}else{
+  if (myInput2%2 ===0){
+  console.log(`${myInput2} yra lyginis skaicius.`);
+
+}else{
+if(myInput2<0 && myInput2 % 2 ===0){
+  console.log(`${myInput2} yra neigiamas lyginis skaicius.`);
+}}}
