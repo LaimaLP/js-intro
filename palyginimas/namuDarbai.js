@@ -34,7 +34,7 @@ console.log("----------");
 
 // ANTRAS VARIANTAS
 
-const x = "vienas";
+const x = "labas";
 if (x === 0) {
   console.log(`${x} irgi yra lyginis skaicius!`);
 } else if (x < 0 && x % 2 === 0) {
@@ -45,13 +45,13 @@ if (x === 0) {
   console.log(`${x} nera lyginis skaicius.`);
 } else if (x < 0 && x % 1 === 0) {
   console.log(` ${x} yra neigiamas ir nera lyginis skaicius`);
+}else if (x % 1 > 0 || ((x < 0 && x % 1 > 0) || x % 1 < 0) ) {
+  console.log(
+    `${x} nera lyginis skaicius, nes desimtainiai skaiciai niekada nebuna lyginiai.`);
 } else {
   console.log(`"${x}" nera tikras skaicius, patikslinkite`);
 }
-// else if ((x < 0 && x % 1 > 0) || x % 1 < 0) {
-//   console.log(
-//     `${x} nera lyginis skaicius, nes desimtainiai skaiciai niekada nebuna lyginiai.`
-//   );
+// (myInput < 0 && myInput % 1 > 0) || myInput % 1 < 0
 // }
 
 // const day = 1;

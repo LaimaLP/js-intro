@@ -272,7 +272,7 @@ console.log(-5 % 2);
 
 console.log("----------");
 
-const myInput = -0.5;
+const myInput = -1.55555555555;
 
 if (myInput === 0) {
   console.log(`${myInput} irgi yra lyginis skaicius!`);
@@ -289,17 +289,17 @@ if (myInput === 0) {
         if (myInput < 0 && myInput % 1 === 0) {
           console.log(` ${myInput} yra neigiamas ir nera lyginis skaicius`);
         } else {
-          if (myInput % 1 > 0) {
+          if (myInput % 1 > 0 || ((myInput < 0 && myInput % 1 > 0) || myInput % 1 < 0) ) {
             console.log(
               `${myInput} nera lyginis skaicius, nes desimtainiai skaiciai niekada nebuna lyginiai.`
             );
-          } else {
-            if ((myInput < 0 && myInput % 1 > 0) || myInput % 1 < 0) {
-              console.log(
-                `${myInput} nera lyginis skaicius, nes desimtainiai skaiciai niekada nebuna lyginiai.`
-              );
+          // } else {
+          //   if ((myInput < 0 && myInput % 1 > 0) || myInput % 1 < 0) {
+          //     console.log(
+          //       `${myInput} nera lyginis skaicius, nes desimtainiai skaiciai niekada nebuna lyginiai.`
+          //     );
             }
-          }
+          
         }
       }
     }
@@ -319,3 +319,4 @@ if (myInput2 === 0) {
 if(myInput2<0 && myInput2 % 2 ===0){
   console.log(`${myInput2} yra neigiamas lyginis skaicius.`);
 }}}
+
