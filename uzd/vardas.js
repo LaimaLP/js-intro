@@ -37,14 +37,25 @@ function looksLikeName(text) {
         if (text.includes(simbolis)) {
             return `Klaida: "${simbolis}" nera leistinas simbolis`;
         }
-    }
 
+        // const leistinaraide = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+        // for (let i = 0; i < leistinaraide.length; i++) {
+        //     const raides = leistinaraide[i];
+        //     if (text.includes(raides)) {
+        //         return `Taip, ${raides} tai yra tinkamos vardui`;
+        //     }
+    
     // jeigu, neradau kaip atmesti, kodel "text"
     // negaletu buti tinkamas vardas
     //      graziname: true
 
     return true;
 }
+    }
+
+
+
 
 console.log(looksLikeName('Jonas'), true);
 console.log(looksLikeName('Maryte'), true);
