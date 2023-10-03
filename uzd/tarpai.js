@@ -1,62 +1,67 @@
 console.clear();
-
 /*
-Duodamas vardas... ar bent tai jau galvojama...
-Ka daryti?
-- reikia nustatyti, ar dave varda, ar ne?
+Duodamas tekstas.
+Jame yra tarpai.
+Ka reikia padaryti?
+- pradzioje nebutu tarpu;
+- pabaigoje nebutu tarpu;
+- jei tarp zodziu yra is eiles einanciu daugiau nei vienas tarpas, tai turi likti tik 1 tarpas;
 */
 
-// Jonas -> true
-// Maryte -> true
-// 12485 -> false
-// labas -> false
-// Labas -> true
-// Azuolas -> true
-// Egle -> true
+const str1 = '    labas    ';
+const ats1 = 'labas';
 
-function looksLikeName(text) {
-    // jeigu, pirma raide nera didzioji
-    //      graziname: false
-    if (text[0] !== text[0].toUpperCase()) {
-        return 'Klaida: pirma raide privalo buti didzioji';
+const str2 = '    labas                           rytas         tau    ';
+const ats2 = 'labas rytas tau';
+
+const str3 = 'ka   tu?   ka vakare?';
+const ats3 = 'ka tu? ka vakare?';
+
+function isvalymas(text) {
+    let ats = text.trim();
+
+    for (; ats.includes('  ');) {
+        ats = ats.replaceAll('  ', ' ');
     }
 
-    // jeigu, visi kiti simboliai, apart pirmo,
-    // yra ne mazosios raides
-    //      graziname: false
-    const likusiosRaides = text.slice(1);
-    if (likusiosRaides !== likusiosRaides.toLowerCase()) {
-        return 'Klaida: visos likusios raides privalo buti mazosios';
-    }
-
-    // jeigu, yra simbolis 0, 1, 2 .... 9 (skaitmuo)
-    //      graziname: false
-    const neleistiniSimboliai = '0123456789_,.?!@#$%^& 👀';
-    for (let i = 0; i < neleistiniSimboliai.length; i++) {
-        const simbolis = neleistiniSimboliai[i];
-        if (text.includes(simbolis)) {
-            return `Klaida: "${simbolis}" nera leistinas simbolis`;
-        }
-    }
-
-    // jeigu, neradau kaip atmesti, kodel "text"
-    // negaletu buti tinkamas vardas
-    //      graziname: true
-
-    return true;
+    return ats;
 }
 
-console.log(looksLikeName('Jonas'), true);
-console.log(looksLikeName('Maryte'), true);
-console.log(looksLikeName('Marytė'), true);
-console.log(looksLikeName('labas'), false);
-console.log(looksLikeName('AZUOLAS'), false);
-console.log(looksLikeName('AzuolaS'), false);
-console.log(looksLikeName('AzuOlas'), false);
-console.log(looksLikeName('Azuolas'), true);
-console.log(looksLikeName('5Azuolas'), false);
-console.log(looksLikeName('Azuo5las'), false);
-console.log(looksLikeName('Azuolas5'), false);
-console.log(looksLikeName('Eg1e'), false);
-console.log(looksLikeName('Egl3'), false);
-console.log(looksLikeName('Eg_le'), false);
+console.log('---------');
+console.log(isvalymas(str1));
+console.log(ats1);
+console.log('---------');
+console.log(isvalymas(str2));
+console.log(ats2);
+console.log('---------');
+console.log(isvalymas(str3));
+console.log(ats3);
+console.log('---------');
+console.log(isvalymas('            abra      ka dabra'));
+console.log('abra ka dabra');
+
+let str4 = " labas     as esu   krabas  "
+let ats4 = "labas as esu krabas"
+
+let galaiBeTarpu = str4.trim();
+console.log(galaiBeTarpu);
+
+function naikinuTarpus(Mex){
+    let ats5 = Mex.trim();
+ for ( ; ats5.includes('  '); ) {
+    ats5 = ats5.replaceAll('  ', ' ');
+ } 
+    return ats5
+ }
+
+ console.log(naikinuTarpus(str4))
+
+//  function isvalymas(text) {
+//     let ats = text.trim();
+
+//     for (; ats.includes('  ');) {
+//         ats = ats.replaceAll('  ', ' ');
+//     }
+
+//     return ats;
+// }
