@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "tarpai":"nodemon ./uzd/tarpai.js",
+    "vardas":"nodemon ./uzd/vardas.js",
+     "method:string":"nodemon ./method/string.js",
+    "method:number":"nodemon ./method/number.js",
     "codewars":"nodemon ./palyginimas/codewars.js",
     "for" : "nodemon ./palyginimas/for.js",
     "operatoriai": "nodemon ./palyginimas/operatoriai.js",
