@@ -248,3 +248,4 @@ for (let i = 0; i < amount; i++) {
 
 const average = totalSum / amount;
 console.log(marks, 'average is', average);
+

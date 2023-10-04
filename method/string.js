@@ -208,34 +208,35 @@ console.log(`Zodyje ${text} raidziu ${letter} yra ${raidziuKiekis(text, letter)}
 
 
 // PASKAITA 2023-10-03
-const r1 = 'Labas';
-const r2 = r1.replace('a', 'x');
-console.log(r1, r2);
+// const r1 = 'Labas';
+// const r2 = r1.replace('a', 'x');
+// console.log(r1, r2);
 
-const r3 = 'Labas rytas';
-const r4 = r3.replace('rytas', 'vakaras');
-console.log(r3, r4);
+// const r3 = 'Labas rytas';
+// const r4 = r3.replace('rytas', 'vakaras');
+// console.log(r3, r4);
 
-const r5 = r3.replace('xxx', 'yyy');
-console.log(r3, r5);
+// const r5 = r3.replace('xxx', 'yyy');
+// console.log(r3, r5);
 
-const r6 = 'Labas';
-const r7 = r6.replaceAll('a', '_');
-console.log(r6, r7);
+// const r6 = 'Labas';
+// const r7 = r6.replaceAll('a', '_');
+// console.log(r6, r7);
 
-let r8 = 'vasara';
+// let r8 = 'vasara';
 
-r8 = r8.replace('a', 'o');
-console.log(r8);
+// r8 = r8.replace('a', 'o');
+// console.log(r8);
 
-r8 = r8.replace('a', 'o');
-console.log(r8);
+// r8 = r8.replace('a', 'o');
+// console.log(r8);
 
-r8 = r8.replace('a', 'o');
-console.log(r8);
+// r8 = r8.replace('a', 'o');
+// console.log(r8);
 
-console.clear();
-
+// console.clear();
+console.log('---------')
+// nauja diena  nauja diena nauja diena nauja diena
 //                01234567
 const kopustas = 'kopustas';
 console.log(kopustas.slice());
@@ -265,7 +266,7 @@ console.log(pvz2PoSplit);
 
 console.log('sasasasas'.split('a'));
 console.log('sasasasas'.split('s'));
-//           |       |         
+// //           |       |         
 
 console.log('asd'.split('x'));
 console.log('x'.split('x'));
