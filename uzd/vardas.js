@@ -31,6 +31,7 @@ function looksLikeName(text) {
 
     // jeigu, yra simbolis 0, 1, 2 .... 9 (skaitmuo)
     //      graziname: false
+    // ascii ir utf-8
     const neleistiniSimboliai = '0123456789_,.?!@#$%^& 👀';
     for (let i = 0; i < neleistiniSimboliai.length; i++) {
         const simbolis = neleistiniSimboliai[i];
@@ -71,3 +72,122 @@ console.log(looksLikeName('Azuolas5'), false);
 console.log(looksLikeName('Eg1e'), false);
 console.log(looksLikeName('Egl3'), false);
 console.log(looksLikeName('Eg_le'), false);
+
+console.clear();
+console.clear()
+console.log('----')
+let vardas = 'Laima Pileliene';
+console.log(vardas);
+console.log(vardas[0]);
+
+
+console.clear()
+console.log('----')
+
+// ----------------------------------------------
+//             2023-10-04 Treciadienis
+// ----------------------------------------------
+
+function isName(name){
+    if(typeof name !== 'string') {
+        return `Klaida, netinkamas duomens tipas, privalo buti "string".;`
+    }
+    const nameMinLength = 2;
+    if(name.length < nameMinLength) {
+        return `Klaida per trumpas vardas, minimum ${nameMinLength} simboliai.`;
+    }
+   const nameMaxLength = 20;
+    if(name.length > 20) {
+        return `Klaida, per ilgas vardas; maximum 20raidziiiu......;`
+    }
+   const pirmaRaide = name[0];
+    if(pirmaRaide[0].toUpperCase == pirmaRaide[0]) {
+        return `Klaida, pirma didzioji......;`
+    }
+    const likusiosRaides = name.slice(1)
+    if(likusiosRaides.toLowerCase() !== likusiosRaides) {
+        return `Klaida, nou antros R privalo buti mazosios;`
+    }
+   
+// turime lesitinu simboliu sarasa
+//LTU:
+const abc = 'abcdefghijklmnoprstvwyz';
+const nameLowerCase = name.toLocaleLowerCase;
+
+ for (let i = 1; i < name.length; i++){
+    const raide = nameLowerCase[i];
+
+    if(!abc.includes(raide)){
+        //ok, tesiam darba
+    }else {
+        return `Klaida: neleistinas simbolis varde ${raide}`;
+    }
+    
+
+ }
+//einu per vardo raides
+//  pasiimu viena is varo raidziu
+//  patikrinu ar ta raide yra leistinu simboliu sarase
+//          jei yra - tesiam darba
+//          jei nera - viskas, radau klaida, baigiam darba
+
+
+//const ABC = abc.toUpperCase;
+
+
+// Jonas -> jonas
+//Maryte -> maryte
+
+
+        return 'Ok';
+}
+
+console.log(isName());
+console.log(isName(undefined));
+console.log(isName(null));
+console.log(isName(13));
+console.log(isName(NaN));
+console.log(isName(true));
+console.log(isName(false));
+console.log(isName([]));
+console.log(isName({}));
+console.log(isName(isName));
+
+
+console.log(isName(''));
+console.log(isName('Li'));
+console.log(isName('i'));
+
+console.log(isName('Au'));
+console.log(isName('Lidvvdvvsvvvxfgdfdgghghhghgdgdvvbfvc'));
+console.log(isName('ona'));
+console.log(isName('petras'));
+console.log(isName('PEtras'));
+
+//ar stringo tipo reiksmes? NE? vadinasi visi auksciau netinka
+
+console.log(isName('Jonas'));
+console.log(isName('Li'));
+console.log(isName('9onas'));
+
+console.log(isName('Jo9as'));
+console.log(isName('!!ile'));
+
+
+console.log(isName('5555555555555555555555555555555'));
+
+const miestas = 'Miestas'
+let errors = '';
+if (miestas.length <10) {
+errors += 'Per trumpas pavadinimas';
+
+}
+if (miestas.length >200) {
+    errors += 'Per ilgas pavadinimas';
+    
+    }
+
+    if (miestas[0].lastIndexOf.length >200) {
+        errors += 'Per ilgas pavadinimas';
+        
+        }
