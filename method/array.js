@@ -70,13 +70,41 @@ const abcJoin2 = abc.join('-');
 console.log(abcJoin, typeof abcJoin);
 console.log(abcJoin2)
 
+console.log('----')
+const str ='labukas'
+const arr=[5,3,6,7];
+
+console.log(str.slice(2))
+console.log('str')
 
 
 
 
+console.clear();
+console.clear();
+
+const flowers = [];
+console.log(flowers)
+flowers.push('kardelis')
+console.log(flowers)
+
+flowers.push('roze')
+console.log(flowers);
+
+flowers.push('tulpe')
+console.log(flowers)
+
+flowers.push('narcizas')
+console.log(flowers)
+
+flowers.pop();
+console.log(flowers)
+
+flowers.shift();
+console.log(flowers)
+
+flowers.unshift('ruta');
+console.log(flowers)
 
 
-
-
-
-
+console.log(flowers.reverse())
