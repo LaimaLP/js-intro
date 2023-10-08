@@ -45,6 +45,7 @@ console.log(jonoKMI2)
 let atsakymas = markoKMI>jonoKMI;
 let atsakymas2 = markoKMI2>jonoKMI2;
 
+
 // 2 uzuoduotis
 
 console.log(atsakymas, "Marko KMI didesnis nei Jono!");
@@ -54,37 +55,80 @@ console.log(atsakymas, `Marko KMI (${markoKMI}) didesnis nei Jono KMI (${jonoKMI
 console.log(atsakymas2, `Jono KMI (${jonoKMI2}) yra didesnis nei Marko KMI !(${markoKMI2})`);
 
 //3 uzduotis
-let delfinuTaskai = [96, 108, 89];
-let koalosTaskai = [88, 91, 110];
-let delfinuVidurkis = (delfinuTaskai[0]+delfinuTaskai[1]+delfinuTaskai[2])/delfinuTaskai.length
-let koaluVidurkis = (koalosTaskai[0]+koalosTaskai[1]+koalosTaskai[2])/koalosTaskai.length
-console.log(`Delfinu vidurkis:  ${delfinuVidurkis.toFixed(2)}`);
-console.log(`Koalu vidurkis1: ${koaluVidurkis.toFixed(2)}`);
+
+
+// let delfinuVidurkis = (delfinuTaskai[0]+delfinuTaskai[1]+delfinuTaskai[2])/delfinuTaskai.length
+// let koaluVidurkis = (koalosTaskai[0]+koalosTaskai[1]+koalosTaskai[2])/koalosTaskai.length
+// console.log(`Delfinu vidurkis:  ${delfinuVidurkis.toFixed(2)}`);
+// console.log(`Koalu vidurkis1: ${koaluVidurkis.toFixed(2)}`);
 
 // 2. Palyginkite komandos balų vidurkį, kad nustatytumėte konkurso nugalėtoją.
 // ir atsispausdinkite į konsolę. Nepamirškite, kad gali būti lygios, todėl išbandykite tai
 // taip pat (lygiosios reiškia, kad jie turi tą patį vidutinį balą)
 
-let lyginu = delfinuVidurkis>koaluVidurkis
+let delfinuTaskai = [96, 108, 89];
+let koalosTaskai = [88, 91, 110];
 
-function kienoDidesnisVidurkis (delfinuTaskai, koalosTaskai){
-    let delfinuTaskai = [96, 108, 89];
-    let koalosTaskai = [88, 91, 110];
-    let delfinuVidurkis = (delfinuTaskai[0]+delfinuTaskai[1]+delfinuTaskai[2])/delfinuTaskai.length
-    let koaluVidurkis = (koalosTaskai[0]+koalosTaskai[1]+koalosTaskai[2])/koalosTaskai.length
+let delfinuSum = 0;
+let delfinuCount = 0;
 
-
-     if(delfinuVidurkis>koaluVidurkis){
-         console.log("Delfinai laimejo");
-    }else if(koaluVidurkis>delfinuVidurkis){
-        console.log("Koalos laimejo");
-}
-
-}
+let koalosSum = 0;
+let koalosCount = 0;
 
 
+// let delfinuBalai = [97, 112, 101];
+// let koalosBalai = [109, 95, 123];
+// function whoseWin(delfinuTaskai, koalosTaskai){
+   
+    for(let i=0; i<delfinuTaskai.length; i++){
+         delfinuSum+= delfinuTaskai[i]
+        delfinuCount ++
+    }
+   
+     for(let i=0; i<koalosTaskai.length; i++){
+        koalosSum+= koalosTaskai[i]
+        koalosCount++
+        console.log(koalosSum)
+    } 
+// }
+        const  delfinuAverage = delfinuSum/delfinuCount
+        console.log((delfinuAverage), "Delfinu vidurkis")
+        const koalosAverage = koalosSum/koalosCount
+      console.log((koalosAverage), "Koalos vidurkis")
 
 
-}
+    // if(koalosAverage>delfinuAverage){
+    //     return "Koalos laimejo"
+    // }else{
+    //     "Delfinai laimejo"
+    // }
+// }
+
+// console.log(whoseWin(delfinuBalai, koalosBalai));
+
+
+console.log('labas')
+
+// let lyginu = delfinuVidurkis>koaluVidurkis
+
+// function kienoDidesnisVidurkis (delfinuTaskai, koalosTaskai){
+//     let delfinuTaskai = [96, 108, 89];
+//     let koalosTaskai = [88, 91, 110];
+//     let delfinuVidurkis = (delfinuTaskai[0]+delfinuTaskai[1]+delfinuTaskai[2])/delfinuTaskai.length
+//     let koaluVidurkis = (koalosTaskai[0]+koalosTaskai[1]+koalosTaskai[2])/koalosTaskai.length
+
+
+//      if(delfinuVidurkis>koaluVidurkis){
+//          console.log("Delfinai laimejo");
+//     }else if(koaluVidurkis>delfinuVidurkis){
+//         console.log("Koalos laimejo");
+// }
+
+// }
+
+
+
+
+
 
 
