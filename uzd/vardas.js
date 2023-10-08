@@ -98,33 +98,38 @@ function isName(name){
     }
    const nameMaxLength = 20;
     if(name.length > 20) {
-        return `Klaida, per ilgas vardas; maximum 20raidziiiu......;`
+        return `Klaida, per ilgas vardas; maximum ${nameMaxLength} simboliai;`
     }
    const pirmaRaide = name[0];
-    if(pirmaRaide[0].toUpperCase == pirmaRaide[0]) {
-        return `Klaida, pirma didzioji......;`
+    if(pirmaRaide.toUpperCase !== pirmaRaide) {
+        return `Klaida, pirma didzioji.....${pirmaRaide}.;`
     }
-    const likusiosRaides = name.slice(1)
-    if(likusiosRaides.toLowerCase() !== likusiosRaides) {
-        return `Klaida, nou antros R privalo buti mazosios;`
+    const likusiosRaides = name.slice(1);
+    if (likusiosRaides.toLowerCase() !== likusiosRaides) {
+        return 'Klaida: likusios (apart pirmos) raides privalo buti mazosios';
     }
-   
-// turime lesitinu simboliu sarasa
-//LTU:
-const abc = 'abcdefghijklmnoprstvwyz';
-const nameLowerCase = name.toLocaleLowerCase;
 
- for (let i = 1; i < name.length; i++){
-    const raide = nameLowerCase[i];
+    // turime leistinu simboliu sarasa
+    const abc = 'abcdefghijklmnopqrstuvwxyz';
+    const nameLowercase = name.toLowerCase();
 
-    if(!abc.includes(raide)){
-        //ok, tesiam darba
-    }else {
-        return `Klaida: neleistinas simbolis varde ${raide}`;
+    // einu per vardo raides
+    //      pasiimu viena is vardo raidziu
+    //      patikrinu ar ta raide yra leistinu simboliu sarase
+    //          jei yra - tesiam darba
+    //          jei nera - viskas, radau klaida, baigiam darba
+
+    for (let i = 0; i < name.length; i++) {
+        const raide = nameLowercase[i];
+
+        if (!abc.includes(raide)) {
+            return `Klaida: neleistinas simbolis varde "${raide}"`;
+        }
     }
-    
 
- }
+    return 'Ok';
+}
+
 //einu per vardo raides
 //  pasiimu viena is varo raidziu
 //  patikrinu ar ta raide yra leistinu simboliu sarase
@@ -137,57 +142,60 @@ const nameLowerCase = name.toLocaleLowerCase;
 
 // Jonas -> jonas
 //Maryte -> maryte
-
-
-        return 'Ok';
-}
-
+//nelogiskos reiksmes, not a string
 console.log(isName());
 console.log(isName(undefined));
 console.log(isName(null));
 console.log(isName(13));
 console.log(isName(NaN));
+console.log(isName(Infinity));
 console.log(isName(true));
 console.log(isName(false));
 console.log(isName([]));
 console.log(isName({}));
 console.log(isName(isName));
 
-
 console.log(isName(''));
-console.log(isName('Li'));
-console.log(isName('i'));
+console.log(isName('L'));
+console.log(isName('Liiiiiiiiiiiiiiiiiiii'));
 
-console.log(isName('Au'));
-console.log(isName('Lidvvdvvsvvvxfgdfdgghghhghgdgdvvbfvc'));
+console.log(isName('maryte'));
 console.log(isName('ona'));
 console.log(isName('petras'));
+console.log('----')
+console.log(isName('MarYte'));
+console.log(isName('OnA'));
 console.log(isName('PEtras'));
 
-//ar stringo tipo reiksmes? NE? vadinasi visi auksciau netinka
-
-console.log(isName('Jonas'));
-console.log(isName('Li'));
+console.log(isName('Mar9te'));
+console.log(isName('On4'));
+console.log(isName('P3tras'));
+console.log(isName('J nas'));
 console.log(isName('9onas'));
+console.log(isName('!bile'));
+console.log(isName(' bile'));
 
-console.log(isName('Jo9as'));
-console.log(isName('!!ile'));
+console.log(isName('Li'));
+console.log(isName('Liiiiiiiiiiiiiiiiiii'));
+console.log(isName('Jonas'));
+
+console.log(isName('555555555555555555555555555555555'));
 
 
 console.log(isName('5555555555555555555555555555555'));
 
-const miestas = 'Miestas'
-let errors = '';
-if (miestas.length <10) {
-errors += 'Per trumpas pavadinimas';
+// const miestas = 'Miestas'
+// let errors = '';
+// if (miestas.length <10) {
+// errors += 'Per trumpas pavadinimas';
 
-}
-if (miestas.length >200) {
-    errors += 'Per ilgas pavadinimas';
+// }
+// if (miestas.length >200) {
+//     errors += 'Per ilgas pavadinimas';
     
-    }
+//     }
 
-    if (miestas[0].lastIndexOf.length >200) {
-        errors += 'Per ilgas pavadinimas';
+//     if (miestas[0].lastIndexOf.length >200) {
+//         errors += 'Per ilgas pavadinimas';
         
-        }
+//         }
