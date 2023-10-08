@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "arrow":"nodemon ./funkcijos/arrow.js",
     "uzd:tarpai":"nodemon ./uzd/tarpai.js",
+    "uzd:pazymiai":"nodemon ./uzd/pazymiai.js",
+    "uzd:mentoriaus1":"nodemon ./uzd/mentoriaus1.js",
     "uzd:vardas":"nodemon ./uzd/vardas.js",
      "method:string":"nodemon ./method/string.js",
      "method:array":"nodemon ./method/array.js",
@@ -13,6 +16,7 @@
     "operatoriai": "nodemon ./palyginimas/operatoriai.js",
     "namuDarbai": "nodemon ./palyginimas/namuDarbai.js",
     "if": "nodemon ./palyginimas/if.js",
+    "ternary": "nodemon ./palyginimas/ternary.js",
     "function": "nodemon ./funkcijos/function.js",
     "object": "nodemon ./kintamieji/object.js",
     "array": "nodemon ./kintamieji/array.js",
