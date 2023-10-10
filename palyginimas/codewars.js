@@ -437,5 +437,78 @@ console.clear();
  console.log(skaiciukasToString.indexOf("."))
 
 
+console.log('------------')
+n = 1240;
+console.log(n)
+let txt = n.toString();
+console.log(txt)
+let lastElement = txt.endsWith(0)
+console.log(lastElement)
+console.log(txt.slice(0,-1))
+console.log(txt)
+console.log(txt.indexOf(3))
+
+let sarasiukas= ['good', 'bad', 'bad', 'bad', 'bad'];
+let sarasiukas2 = ['good', 'bad', 'bad', 'bad', 'bad', 'good', 'bad', 'bad', 'good']
+let sarasiukas3 = ['bad', 'bad', 'bad']
+
+function well(x){
+  let count = 0;
+  let arr = [];
+
+ for(i=0; i<x.length; i++){
+   if(x[i] === "good"){
+     arr.push(x[i])
+     count++
+   }
+  //  console.log(count)
+ }
+     if(arr.length==1||arr.length==2){ 
+       return'Publish!';
+     }else if(arr.length > 2){
+        return 'I smell a series!';
+    }else if(arr.length == 0){
+      return 'Fail!';
+    }
+  }
+console.log(well(sarasiukas))
+
+console.log(arr.length)
+console.log(well(sarasiukas2))
+console.log(arr.length)
+console.log(well(sarasiukas3))
+console.log(arr.length)
+console.log("--------")
 
 
+let d = 21
+function solution(d){
+  let suma =0
+  // let krepsiukas = [];
+  for (let i=0; i<=d; i++){
+    if(Number.isInteger(i/3) || Number.isInteger(i/5)){
+      suma += i
+      
+    }
+  }console.log(suma)
+}
+  solution(d)
+
+  masyvas = [[ 0, 1, 2, 3, 4 ],
+  [ 10,11,12,13,14 ],
+  [ 20,21,22,23,24 ],
+  [ 30,31,32,33,34 ]] 
+
+ 
+  let o = ""
+  console.log(masyvas.toString())
+
+  for (let i =0; i<masyvas.length; i++){
+    
+      o+=masyvas[i].toString() + '\\n'
+    
+      
+  }
+ 
+console.log(o)
+console.log(masyvas.toString())
