@@ -89,6 +89,15 @@ return count ? average: "Neiskaityta";
         count++;
 }
 */
+console.log("labas")
+function funkcija (x, y){
+if (y ===0 || x===0){
+    return 0
+}
+}
+console.log(funkcija(0, 3))
+console.log("labas")
+
 
 console.log(marksAverage(marks0), '->', 6);
 console.log(marksAverage(marks1), '->', 6);
