@@ -227,8 +227,6 @@ console.log(sum, kiekis);
 console.log(sum / kiekis);
 console.log(sum / arr2.length);
 
-
-
 // function betterThanAverage(classPoints, yourPoints) {
 //   let allPoints = classPoints.concat(yourPoints);
 
@@ -249,57 +247,47 @@ console.log(sum / arr2.length);
 //   return false;
 // }
 
-
-
-
-
-let  n = 5;
+let n = 5;
 let reiksme = 5;
 let arr3 = [];
-console.log(n)
-for(i=n; i>0; i--){
-  arr3.push(i)
+console.log(n);
+for (i = n; i > 0; i--) {
+  arr3.push(i);
 }
-console.log(arr3)
+console.log(arr3);
 
-let x = [3,2,5]
-console.log(x)
+let x = [3, 2, 5];
+console.log(x);
 
-let arr5=[]
-for(let i=0; i<x.length; i++){
-arr5.push(x[i]*2)
+let arr5 = [];
+for (let i = 0; i < x.length; i++) {
+  arr5.push(x[i] * 2);
 }
-console.log(arr5)
+console.log(arr5);
 
+console.log("----");
+let arr6 = ["t", "b", "h"];
+console.log(arr6[0]);
 
+let arr7 = [];
+console.log(arr6);
 
-console.log('----')
-let arr6 = ["t", "b", "h"]
-console.log(arr6[0])
+console.log(arr6.pop());
+console.log(arr6.shift());
+console.log(arr6);
 
-let arr7=[]
-console.log(arr6)
+console.log(arr6.pop());
+console.log(arr6);
 
-console.log((arr6.pop()))
-console.log((arr6.shift()))
-console.log(arr6)
-
-console.log(arr6.pop())
-console.log(arr6)
-
-console.log(arr6.pop())
-console.log(arr6)
-let zodis = 'labas'
-console.log(zodis.length)
+console.log(arr6.pop());
+console.log(arr6);
+let zodis = "labas";
+console.log(zodis.length);
 let skaicius = -2;
-console.log(skaicius.toString())
-console.log(skaicius.toString().length)
-console.log(skaicius.toString().split(''))
-console.log(skaicius.toString().length)
-
-
-
-
+console.log(skaicius.toString());
+console.log(skaicius.toString().length);
+console.log(skaicius.toString().split(""));
+console.log(skaicius.toString().length);
 
 // let PliusH = arr7.push(arr6.pop())
 // console.log(arr7)
@@ -308,87 +296,78 @@ console.log(skaicius.toString().length)
 
 console.clear();
 function splitAndMerge(string, separator) {
-  
-  let words  = string.split(" ");
+  let words = string.split(" ");
   console.log("words: ", words);
-  
-  for(let i=0; i<words.length; i++){
-      words[i]=words[i].split("").join(separator)
-        }
+
+  for (let i = 0; i < words.length; i++) {
+    words[i] = words[i].split("").join(separator);
+  }
   console.log("words2: ", words);
   console.log("words2: ", words.join(" "));
-  
 }
-splitAndMerge("My name is John","-")
+splitAndMerge("My name is John", "-");
 
-let vienas = "labai labas,   vakaras tau, sakau, jhkjh, hjhjkj "
-console.log(vienas)
-console.log(vienas.split(',', 3))
+let vienas = "labai labas,   vakaras tau, sakau, jhkjh, hjhjkj ";
+console.log(vienas);
+console.log(vienas.split(",", 3));
 
-let vienas2 = "a a"
-console.log(vienas2)
-console.log(vienas2.split('x'))
-console.log(''.split('x'))
-console.log(vienas2.split('x')+(''.split('x')));
-console.log("--------")
+let vienas2 = "a a";
+console.log(vienas2);
+console.log(vienas2.split("x"));
+console.log("".split("x"));
+console.log(vienas2.split("x") + "".split("x"));
+console.log("--------");
 
-let tuscia = ''.split('x');
-console.log(tuscia)
-let vienasA= vienas2.split('')
-console.log(vienasA)
-console.log(vienasA.concat(tuscia))
+let tuscia = "".split("x");
+console.log(tuscia);
+let vienasA = vienas2.split("");
+console.log(vienasA);
+console.log(vienasA.concat(tuscia));
 
+console.log("--------");
 
-console.log("--------")
+const pvz = "Labas rytas suraitytas vistos koja parasytas";
+console.log(pvz.split("x"));
+console.log(pvz.split("a"));
+console.log(pvz.split(" "));
 
-
-
-
-
-const pvz = 'Labas rytas suraitytas vistos koja parasytas';
-console.log(pvz.split('x'));
-console.log(pvz.split('a'));
-console.log(pvz.split(' '));
-
-const pvz2 = 'vasara';
-const pvz2PoSplit = pvz2.split('a');
+const pvz2 = "vasara";
+const pvz2PoSplit = pvz2.split("a");
 console.log(pvz2PoSplit);
 
-console.log('sasasasas'.split('a'));
-console.log('sasasasas'.split('s'));
-// //           |       |         
+console.log("sasasasas".split("a"));
+console.log("sasasasas".split("s"));
+// //           |       |
 
-console.log('asd'.split('x'));
-console.log('x'.split('x'));
-console.log('asd'.split('asd'));
-console.log('labas'.split(''));
-console.log(''.split('x'));
-console.log(''.split(''));
-console.log("--------------------------")
+console.log("asd".split("x"));
+console.log("x".split("x"));
+console.log("asd".split("asd"));
+console.log("labas".split(""));
+console.log("".split("x"));
+console.log("".split(""));
+console.log("--------------------------");
 
-console.log("boolean")
+console.log("boolean");
 
-console.log("--------------------------")
- let tekstas = "labas?";
- let tekstas2 = "labukas";
- console.log(tekstas)
- let masyvas=["nu"]
- console.log(masyvas)
+console.log("--------------------------");
+let tekstas = "labas?";
+let tekstas2 = "labukas";
+console.log(tekstas);
+let masyvas = ["nu"];
+console.log(masyvas);
 
- console.log(masyvas.push(tekstas))
- console.log(masyvas)
+console.log(masyvas.push(tekstas));
+console.log(masyvas);
 
- console.log(masyvas.push(tekstas2))
- console.log(masyvas);
- console.log("--------------------------")
-console.log(tekstas.slice(0,-1))
-console.log("--------------------------")
+console.log(masyvas.push(tekstas2));
+console.log(masyvas);
+console.log("--------------------------");
+console.log(tekstas.slice(0, -1));
+console.log("--------------------------");
 console.clear();
 let mark = "!";
 let text = "str!ing!";
-console.log(text.replaceAll("!", ""))
-
-
+console.log(text.replaceAll("!", ""));
 
 // https://www.codewars.com/kata/56d93f249c844788bc000002/train/javascript
 // function testit(s) {
@@ -426,89 +405,259 @@ console.log(text.replaceAll("!", ""))
 // console.log("--------")
 
 console.clear();
- let myArr= ["codewars", "flick", "code", "wars"];
- console.log(myArr);
- 
- let skaiciukas = 37.5;
- let skaiciukasToString = skaiciukas.toString()
- 
- console.log(skaiciukas.toString().length)
+let myArr = ["codewars", "flick", "code", "wars"];
+console.log(myArr);
 
- console.log(skaiciukasToString.indexOf("."))
+let skaiciukas = 37.5;
+let skaiciukasToString = skaiciukas.toString();
 
+console.log(skaiciukas.toString().length);
 
-console.log('------------')
+console.log(skaiciukasToString.indexOf("."));
+
+console.log("------------");
 n = 1240;
-console.log(n)
+console.log(n);
 let txt = n.toString();
-console.log(txt)
-let lastElement = txt.endsWith(0)
-console.log(lastElement)
-console.log(txt.slice(0,-1))
-console.log(txt)
-console.log(txt.indexOf(3))
+console.log(txt);
+let lastElement = txt.endsWith(0);
+console.log(lastElement);
+console.log(txt.slice(0, -1));
+console.log(txt);
+console.log(txt.indexOf(3));
 
-let sarasiukas= ['good', 'bad', 'bad', 'bad', 'bad'];
-let sarasiukas2 = ['good', 'bad', 'bad', 'bad', 'bad', 'good', 'bad', 'bad', 'good']
-let sarasiukas3 = ['bad', 'bad', 'bad']
+let sarasiukas = ["good", "bad", "bad", "bad", "bad"];
+let sarasiukas2 = [
+  "good",
+  "bad",
+  "bad",
+  "bad",
+  "bad",
+  "good",
+  "bad",
+  "bad",
+  "good",
+];
+let sarasiukas3 = ["bad", "bad", "bad"];
 
-function well(x){
+function well(x) {
   let count = 0;
   let arr = [];
 
- for(i=0; i<x.length; i++){
-   if(x[i] === "good"){
-     arr.push(x[i])
-     count++
-   }
-  //  console.log(count)
- }
-     if(arr.length==1||arr.length==2){ 
-       return'Publish!';
-     }else if(arr.length > 2){
-        return 'I smell a series!';
-    }else if(arr.length == 0){
-      return 'Fail!';
+  for (i = 0; i < x.length; i++) {
+    if (x[i] === "good") {
+      arr.push(x[i]);
+      count++;
     }
+    //  console.log(count)
   }
-console.log(well(sarasiukas))
-
-console.log(arr.length)
-console.log(well(sarasiukas2))
-console.log(arr.length)
-console.log(well(sarasiukas3))
-console.log(arr.length)
-console.log("--------")
-
-
-let d = 21
-function solution(d){
-  let suma =0
-  // let krepsiukas = [];
-  for (let i=0; i<=d; i++){
-    if(Number.isInteger(i/3) || Number.isInteger(i/5)){
-      suma += i
-      
-    }
-  }console.log(suma)
+  if (arr.length == 1 || arr.length == 2) {
+    return "Publish!";
+  } else if (arr.length > 2) {
+    return "I smell a series!";
+  } else if (arr.length == 0) {
+    return "Fail!";
+  }
 }
-  solution(d)
+console.log(well(sarasiukas));
 
-  masyvas = [[ 0, 1, 2, 3, 4 ],
-  [ 10,11,12,13,14 ],
-  [ 20,21,22,23,24 ],
-  [ 30,31,32,33,34 ]] 
+console.log(arr.length);
+console.log(well(sarasiukas2));
+console.log(arr.length);
+console.log(well(sarasiukas3));
+console.log(arr.length);
+console.log("--------");
 
- 
-  let o = ""
-  console.log(masyvas.toString())
+let d = 21;
+function solution(d) {
+  let suma = 0;
+  // let krepsiukas = [];
+  for (let i = 0; i <= d; i++) {
+    if (Number.isInteger(i / 3) || Number.isInteger(i / 5)) {
+      suma += i;
+    }
+  }
+  console.log(suma);
+}
+solution(d);
 
-  for (let i =0; i<masyvas.length; i++){
-    
-      o+=masyvas[i].toString() + '\\n'
-    
+masyvas = [
+  [0, 1, 2, 3, 4],
+  [10, 11, 12, 13, 14],
+  [20, 21, 22, 23, 24],
+  [30, 31, 32, 33, 34],
+];
+
+let o = "";
+console.log(masyvas.toString());
+
+for (let i = 0; i < masyvas.length; i++) {
+  o += masyvas[i].toString() + "\\n";
+}
+
+console.log(o);
+console.log(masyvas.toString());
+
+console.clear();
+
+let names = [];
+console.log(names.length);
+
+function likes(names) {
+  if (names.length === 0) {
+    return `no one likes this`;
+  } else if (names.length > 3) {
+    return `${names[0]}, ${names[1]} and 2 others like this`;
+  } else if (names.length == 3) {
+    return `${names[0]}, ${names[1]} and ${names[2]} like this`;
+  } else if (names.length == 2) {
+    return `${names[0]} and ${names[1]}  like this`;
+  } else if (names.length == 1) {
+    return `${names[0]} likes this`;
+  }
+}
+console.log(likes(names));
+
+console.log("labas");
+let integer = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+console.log(
+  `(${integer[0]}${integer[1]}${integer[2]}) ${integer[3]}${integer[4]}${integer[5]}-${integer[6]}${integer[7]}${integer[8]}${integer[9]}`
+);
+
+let A = [20, 1, -1, 2, -2, 3, 3, 5, 5, 1, 2, 4, 20, 4, -1, -2, 5];
+let B = A.sort();
+B.toString();
+console.log(B);
+console.log(B);
+let mas = "";
+let count = 0;
+
+for (let i = 0; i < B.length; i++) {
+  if (B[i] == B[i + 1]) {
+    B[i];
+    count++;
+  }
+}
+
+console.log("mas:", B);
+console.log("count:", count);
+
+// function FindDubli(A){
+//   let renku = []
+//   for(let i=0; i<A.length; i++){
+//     for (let j=0; j<A.length; i++){
+//           if(A[i]==A[j]){
+//             renku.push(A[i])
+
+//       }
+//     }
+//       return renku
+//     }
+//   }
+
+// console.log("funkcijos:", FindDubli(A))
+
+function findOdd(arr) {
+  var result,
+    num = 0;
+
+  arr = arr.sort();
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] === arr[i + 1]) {
+      num++;
+    } else {
+      num++;
+      if (num % 2 != 0) {
+        result = arr[i];
+        break;
+      }
+    }
+  }
+  return result;
+}
+
+let arr12 = [-5, 10, 9, 8, 9, 8, 5, 3, 5, 5, -2];
+console.log(`letsatsakymas:`, findOdd(arr12));
+
+console.clear();
+console.clear();
+
+let a = 5;
+a = 7;
+console.log(a);
+
+for (let i = 1; i < 5; i++) {
+  console.log(i);
+}
+
+for (let i = 5; i < 0; i--) {
+  console.log(i);
+}
+
+console.log("labas");
+
+function isOpposite(s1, s2) {
+  const mazosiosS1 = s1.toLowerCase();
+  const mazosiosS2 = s2.toLowerCase();
+  if (s1 !== "" && s1 !== s2) {
+    if (s1.length === s2.length) {
+      if (mazosiosS1 === mazosiosS2) {
+      }
+    }
+    return true;
+  } else {
+    return false;
+  }
+}
+
+const r = 1;
+const g = 2;
+const b = 101;
+
+function colorOf(r, g, b) {
+  r.toString(16);
+}
+
+console.log("labukas", r.toString(16));
+console.log("labukas", g.toString(16));
+console.log("labukas", b.toString(16));
+
+console.log("labukas", r.toLocaleString(16));
+console.log("labukas", g.toLocaleString(16));
+console.log("labukas", b.toLocaleString(16));
+
+let seq = [1, 2, 3, 4, 6, 7, 8, 9];
+
+//   function findMissing(seq){
+//     let  paskutinis = seq[seq.length-1]
+// let x = (paskutinis-seq[0])/(seq.length-1);
+// let prarastasis = 0
+// for(i=0;i<seq.length; i++){
+//   if(seq[i+1] !== seq[i]+x){
+//     prarastasis=  seq[i+1]-x
+//   }
+// }return prarastasis
+// }
+//   console.log("prarastasis", findMissing(seq2))
+
+let seq2 = [1, 3, 5, 9, 11];
+
+function findMissing(seq) {
+  let paskutinis = seq.slice(-1);
+  console.log("last", paskutinis);
+  let x = (paskutinis - seq[0]) / seq.length;
+  console.log("progresija", x);
+  console.log(seq);
+  let prarastasis = 0;
+  for (i = 0; i < seq.length; i++) {
+    console.log("pirmas if", seq[i] + x);
+    console.log("antras if", seq[i + 1]);
+
+    if (seq[i] + x !== seq[i + 1]) {
+       return seq[i] + x;
       
+    }
   }
  
-console.log(o)
-console.log(masyvas.toString())
+}
+console.log("prarastasis", findMissing(seq2));
