@@ -7,6 +7,7 @@
     "uzd:tarpai":"nodemon ./uzd/tarpai.js",
     "uzd:pazymiai":"nodemon ./uzd/pazymiai.js",
     "uzd:mentoriaus1":"nodemon ./uzd/mentoriaus1.js",
+    "uzd:mentoriaus2":"nodemon ./uzd/mentoriaus2.js",
     "uzd:vardas":"nodemon ./uzd/vardas.js",
      "method:string":"nodemon ./method/string.js",
      "method:array":"nodemon ./method/array.js",

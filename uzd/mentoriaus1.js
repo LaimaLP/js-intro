@@ -187,3 +187,4 @@ console.log(typeof bill1)
 console.log(`Saskaita buvo ${bill1}, arbatpinigiai ${tips4(bill1)}, o bendra verte ${(bill1 + tips4(bill1))}`)
 console.log(`Saskaita buvo ${bill2}, arbatpinigiai ${tips4(bill2)}, o bendra verte ${(bill2 + tips4(bill2))}`)
 console.log(`Saskaita buvo ${bill3}, arbatpinigiai ${tips4(bill3)}, o bendra verte ${(bill3 + tips4(bill3))}`)
+ 
