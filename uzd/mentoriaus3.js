@@ -142,13 +142,31 @@ console.log("kintamujuArr:", kintamujuArr)
  console.log(c)
 
  //9 
- const latinABC = [A, B, C, D, E, F, G, H, I, K, L, M, N, O, P, Q, R, S, T, V, X, Y, Z]
- 
+                //  0    1    2     3    4   5     6    7   8     9   10   11   12   13   14   15   16   17   18   19  20    21   22
+ const latinABC = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "V", "X", "Y", "Z"]
+
  function rand(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1) + min);
 }
+console.log("skaicius:", rand(0,22))
+const firstLetter = latinABC[rand(0,22)];
+console.log("Pirma raide", firstLetter)
+const secondLetter = latinABC[rand(0,22)];
+const thirdLetter = latinABC[rand(0,22)];
+
+
+const randomString1 = firstLetter+secondLetter+thirdLetter
+const randomString2 = firstLetter+secondLetter+thirdLetter
+const randomString3 = firstLetter+secondLetter+thirdLetter
+
+
+console.log(randomString1)
+console.log(randomString2)
+console.log(randomString3)
+
+
 
 
 

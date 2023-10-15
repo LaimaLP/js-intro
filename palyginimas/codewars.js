@@ -661,3 +661,12 @@ function findMissing(seq) {
  
 }
 console.log("prarastasis", findMissing(seq2));
+
+
+let seq5= [3, 9, 1, 11, 13, 5];
+console.log("sortinta", seq5.sort())
+console.log(seq5)
+console.log(seq5.toSorted())
+
+
+
