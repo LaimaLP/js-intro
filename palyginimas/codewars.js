@@ -640,33 +640,64 @@ let seq = [1, 2, 3, 4, 6, 7, 8, 9];
 // }
 //   console.log("prarastasis", findMissing(seq2))
 
-let seq2 = [1, 3, 5, 9, 11];
+console.clear();
+console.log("veikia", "----------")
 
-function findMissing(seq) {
-  let paskutinis = seq.slice(-1);
-  console.log("last", paskutinis);
-  let x = (paskutinis - seq[0]) / seq.length;
-  console.log("progresija", x);
-  console.log(seq);
-  let prarastasis = 0;
-  for (i = 0; i < seq.length; i++) {
-    console.log("pirmas if", seq[i] + x);
-    console.log("antras if", seq[i + 1]);
 
-    if (seq[i] + x !== seq[i + 1]) {
-       return seq[i] + x;
-      
-    }
+// const s = "We often read book, a word hidden in the book."
+
+// function testit(s){
+//   let string ="";
+//   let worduSkaicius = 0
+//  let s2 = s.toLowerCase();
+//     for(let i=0; i<s.length; i++){
+//       if(s2[i] ==="w" && !string.includes("w")){
+//       string+= s2[i]
+//       console.log("zodis:", string)
+//       }
+//       if(s2[i] ==="o" && !string.includes("o")&& string.includes("w")){
+//         string+= s2[i]
+//         console.log("zodis:", string)
+//       }
+//       if(s2[i] ==="r" && !string.includes("r")&& string.includes("w") && string.includes("o")){
+//         string+= s2[i]
+//         console.log("zodis:", string)
+//       }
+//       if(s2[i] ==="d" && !string.includes("d")&& string.includes("w") && string.includes("o") && string.includes("r")){
+//         string+= s2[i]
+//         console.log("zodis:", string)
+//       }
+
+//       if(string === "word"){
+//         worduSkaicius++;
+//         string="";
+
+//       }
+//     }
+//     return worduSkaicius
+// }
+// console.log(testit(s))
+
+
+let s = "ab gd"
+
+function testit(s){
+  arr = s.split(" ")
+  let bendras = [];
+
+  for(let i=0; i<arr.length; i++){
+    let paskutinisEl = arr[i][arr[i].length-1]
+    let keiciuI = (arr[i][arr[i].length-1]).toUpperCase()
+    // naujasArr = arr[i].replace(paskutinisEl, keiciuI)
+     arr[i] ='hgj'
+    console.log("news:", arr[i])
+    news.push(keiciuI)
   }
- 
+
+  return news.toString().replaceAll(","," ")
+
 }
-console.log("prarastasis", findMissing(seq2));
-
-
-let seq5= [3, 9, 1, 11, 13, 5];
-console.log("sortinta", seq5.sort())
-console.log(seq5)
-console.log(seq5.toSorted())
-
+console.log(testit(s))
+ 
 
 
