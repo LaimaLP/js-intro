@@ -23,6 +23,8 @@ function whichShorter(name, surname){
 }
 console.log(whichShorter(name, surname))
 
+
+console.log("-------2--------")
 //2.
 const myName = "Laima";
 const mySurname = "Pileliene"
@@ -30,30 +32,43 @@ const birthDay = 1993
 const date = 2023
 
 function myAge(birthDay, date){
-    return date-birthDay
+    let amzius = date-birthDay
+    return `Aš esu ${myName} ${mySurname}. Man yra ${amzius} metų.`
 }
 
-console.log("My age: ", myAge(birthDay, date));
-console.log(`Aš esu ${myName} ${mySurname}. Man yra ${myAge(birthDay, date)} metaų.`)
+console.log("Function myAge result: ", myAge(birthDay, date));
 
+
+console.log("--------3-------")
 //3.
 const thirdString = `${name.slice(-3)}${surname.slice(-3)}`;
 console.log(thirdString)
 
+
+console.log("-------4--------")
 //4
 
 const str = " “Once upon a time in hollywood” "
 console.log(str)
 const allLowerOChange = str.replaceAll("o", "*");
-console.log(allLowerOChange)
+console.log("mazuju o keitimas:", allLowerOChange)
 const allUpperOChange = allLowerOChange.replaceAll("O","*");
-console.log(allUpperOChange);
+console.log("didziuju o keitimas:",allUpperOChange);
 
 const strLower = str.toLowerCase()
 const changeAllO =strLower.replaceAll("o","*")
 console.log(changeAllO);
 //o jei tai butu keli sakiniai su didziosiomis/mazosiomis kaip tokiu atveju vienu replaceAll pakeisti?
 
+// function replaceLetter(str){
+//     let lower=str.toLowerCase();
+//     let result=lower.replaceAll("o", "*")
+//     return result
+// }
+// console.log("str", result)
+
+
+console.log("-------5--------")
 //5
 
 
@@ -92,6 +107,9 @@ console.log("0 yra:", randomZeros)
 console.log("1 yra:", randomOnes)
 console.log("2 yra:", randomTwos)
 
+
+console.log("-------6--------")
+
 //6
 
 function rand(min, max) {
@@ -109,10 +127,13 @@ console.log("kintamasis1:",kintamasis1);
 console.log("kintamasis2:", kintamasis2)
 
  function whichLarger(kintamasis1, kintamasis2){
+ 
 return kintamasis1>kintamasis2? (kintamasis1/kintamasis2).toFixed(2): (kintamasis2/kintamasis1).toFixed(2);
  }
  console.log("larger divided by smaller:", whichLarger(kintamasis1, kintamasis2))
 
+
+console.log("-------7--------")
  //7
  const kintamasis3 = rand(0, 25);
  const kintamasis4 = rand(0, 25);
@@ -133,13 +154,16 @@ console.log("kintamujuArr:", kintamujuArr)
  console.log("Mediana:", middleValue(kintamujuArr))
 
 
-
+ console.log("-------8--------")
  // 8
 
  const a = "Johny";
  const b = "Depp";
  const c = a[0]+b[0]
  console.log(c)
+
+
+console.log("-------9--------")
 
  //9 
                 //  0    1    2     3    4   5     6    7   8     9   10   11   12   13   14   15   16   17   18   19  20    21   22
@@ -158,14 +182,12 @@ const thirdLetter = latinABC[rand(0,22)];
 
 
 const randomString1 = firstLetter+secondLetter+thirdLetter
-const randomString2 = firstLetter+secondLetter+thirdLetter
-const randomString3 = firstLetter+secondLetter+thirdLetter
+
 
 
 console.log(randomString1)
-console.log(randomString2)
-console.log(randomString3)
 
+// const theString = String.fromCharCode(rand(97, 122), rand(97, 122), rand(97, 122));
 
 
 

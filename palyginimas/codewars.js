@@ -641,8 +641,7 @@ let seq = [1, 2, 3, 4, 6, 7, 8, 9];
 //   console.log("prarastasis", findMissing(seq2))
 
 console.clear();
-console.log("veikia", "----------")
-
+console.log("veikia", "----------");
 
 // const s = "We often read book, a word hidden in the book."
 
@@ -677,27 +676,45 @@ console.log("veikia", "----------")
 //     return worduSkaicius
 // }
 // console.log(testit(s))
+console.log("------veikia------");
 
+let animals = [
+  { name: "Cat", numberOfLegs: 4 },
+  { name: "Snake", numberOfLegs: 0 },
+  { name: "Dog", numberOfLegs: 4 },
+  { name: "Pig", numberOfLegs: 4 },
+  { name: "Human", numberOfLegs: 2 },
+  { name: "Bird", numberOfLegs: 2 },
+];
+console.log("original animals:", animals);
 
-let s = "ab gd"
-
-function testit(s){
-  arr = s.split(" ")
-  let bendras = [];
-
-  for(let i=0; i<arr.length; i++){
-    let paskutinisEl = arr[i][arr[i].length-1]
-    let keiciuI = (arr[i][arr[i].length-1]).toUpperCase()
-    // naujasArr = arr[i].replace(paskutinisEl, keiciuI)
-     arr[i] ='hgj'
-    console.log("news:", arr[i])
-    news.push(keiciuI)
+// sort by name
+animals.sort((a, b) => {
+  const nameA = a.name;
+  const nameB = b.name;
+  if (nameA < nameB) {
+    return -1;
   }
+  if (nameA > nameB) {
+    return 1;
+  }
+});
 
-  return news.toString().replaceAll(","," ")
+//sort by value
+let sortedAnimals = animals.sort((a, b) => a.numberOfLegs - b.numberOfLegs);
+console.log("sorted:", sortedAnimals);
 
-}
-console.log(testit(s))
- 
+// function sortAnimal(animals) {
+//   console.log("gaunam:",animals)
 
+//   const list = [];
 
+//   for (i=0;i<animals.length; i++){
+//     list.push(animals[i].numberOfLegs)
+//     list.push(animals[i].name)
+//   }
+//   console.log("list:" , list)
+//     return list
+// }
+
+// console.log(sortAnimal(animals))
