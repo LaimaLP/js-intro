@@ -718,3 +718,68 @@ console.log("sorted:", sortedAnimals);
 // }
 
 // console.log(sortAnimal(animals))
+ console.clear()
+
+let moneyIn= "£5"
+function changeMe(moneyIn) {
+  if(moneyIn=="£5"){
+    let n = 5*100/20
+    let coin = "20p "
+    return  coin.repeat(n).toString()
+  }
+}
+
+console.log(changeMe(moneyIn))
+
+function changeMe(moneyIn){
+  if(moneyIn=="£5"){
+    let n = 5*100/20
+    let coin = "20p "
+    return coin.repeat(n)
+  }else if(moneyIn=="£2"){
+   let m = 2*100/20;
+    return coin.repeat(m)
+  }else if(moneyIn=="£1"){
+   let p = 1*100/20;
+    return coin.repeat(p)
+    }else  if(moneyIn=="50p"){
+       return "20p 20p 10p"
+      }else if(moneyIn=="20p"){
+        return "20p"
+  }else
+    return moneyIn
+}
+
+console.log("veikia","20p ".repeat(3))
+let h = 11;
+
+
+s1="qWavd" 
+ s2="QwAVD"
+
+s1="RiTNHRGYmWa"
+s2="riTNHRGyMWa"
+
+s1="yeQP"  
+s2="YEQp"
+
+function isOpposite(s1,s2){
+  const mazosiosS1 =s1.toLowerCase();
+  const mazosiosS2 = s2.toLowerCase()
+  
+  if (s1 ==='' && s1 === s2){
+    return false
+    }
+  if (mazosiosS1!==mazosiosS2){
+    return false
+    }
+  for (i=0; i<s1.length; i++){
+    if( (/[A-Z]/.test(s1[i]) === /[a-z]/.test(s2[i])) &&  (/[A-Z]/.test(s2[i]) === /[a-z]/.test(s1[i]))) {
+   return true
+    }else{
+   return false;
+   }
+  }
+}
+s1="VWKEoXjzQXizm"  
+s2="vWKEoXjzQXizm"
