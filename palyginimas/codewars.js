@@ -781,5 +781,74 @@ function isOpposite(s1,s2){
    }
   }
 }
-s1="VWKEoXjzQXizm"  
-s2="vWKEoXjzQXizm"
+
+
+let stringiukai = ["mano", "meile", "vasara"]
+console.log("stringiukai",stringiukai.reverse() )
+console.log("stringiukai vienas", stringiukai[2].split("").reverse().join("") )
+
+
+// function wordsReverser(string){
+//   var words = string.split(' ');
+//   var result = [];
+//   for(var i = 0; i < words.length; i ++){
+//     result.push(words[i].split('').reverse().join(''));
+//   }  
+//   return result.join(' ');
+// }
+
+
+// let str6 = "Reverse this string, please!"
+// console.log("str6:",str6)
+
+
+// function reverse(str6){
+  
+//   let arr= str6.split(" ");
+//   let reveArr=[];
+//   console.log("arr:",arr)
+  
+//   for(let i=0; i<arr.length; i++){
+//     if(i%2!==0){
+//       reveArr.push(arr[i].reverse());
+//     }else{
+//       reveArr.push(arr[i])
+//     }
+//   }
+//   return reveArr.join(" ")
+// }
+
+// console.log(reverse(str6))
+
+
+let user = {
+  id: 42,
+  address: [{
+          street: "Av Brasil, 200",
+          city: 'São Paulo',
+          country: "Brazil",
+          mainAddress: true
+      },{
+          street: "Av Atlantica, 150",
+          city: 'Rio de Janeiro’,
+          country: "Brazil",
+          mainAddress: false
+      }]
+};
+
+var rooms = {
+  first: {
+    description: 'This is the first room',
+    items: {
+      chair: 'The old chair looks comfortable',
+      lamp: 'This lamp looks ancient'
+  },
+  second: {
+    description: 'This is the second room',
+    items: {
+      couch: 'This couch looks like it would hurt your back',
+      table: 'On the table there is an unopened bottle of water'
+    }
+  }
+}
+}
