@@ -821,34 +821,11 @@ console.log("stringiukai vienas", stringiukai[2].split("").reverse().join("") )
 // console.log(reverse(str6))
 
 
-let user = {
-  id: 42,
-  address: [{
-          street: "Av Brasil, 200",
-          city: 'São Paulo',
-          country: "Brazil",
-          mainAddress: true
-      },{
-          street: "Av Atlantica, 150",
-          city: 'Rio de Janeiro’,
-          country: "Brazil",
-          mainAddress: false
-      }]
-};
-
-var rooms = {
-  first: {
-    description: 'This is the first room',
-    items: {
-      chair: 'The old chair looks comfortable',
-      lamp: 'This lamp looks ancient'
-  },
-  second: {
-    description: 'This is the second room',
-    items: {
-      couch: 'This couch looks like it would hurt your back',
-      table: 'On the table there is an unopened bottle of water'
-    }
-  }
-}
-}
+console.clear()
+ let test = "labutelaitis mano zmogau"
+ console.log("test:", test)
+ let Atest=test.split(" ")
+ console.log("Atest:", Atest)
+ console.log("pirmo pirmas:", Atest[0][0].toUpperCase())
+ console.log("pirmo galas", Atest[0].slice(1))
+ console.log("sujungiam:", Atest[0][0].toUpperCase()+Atest[0].slice(1))
