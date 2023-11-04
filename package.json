@@ -10,6 +10,8 @@
     "uzd:mentoriaus2":"nodemon ./uzd/mentoriaus2.js",
     "uzd:mentoriaus3":"nodemon ./uzd/mentoriaus3.js",
     "uzd:vardas":"nodemon ./uzd/vardas.js",
+    "method:array-loops":"nodemon ./method/array-loops.js",
+
      "method:string":"nodemon ./method/string.js",
      "method:array":"nodemon ./method/array.js",
     "method:number":"nodemon ./method/number.js",
