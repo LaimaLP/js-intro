@@ -829,3 +829,20 @@ console.clear()
  console.log("pirmo pirmas:", Atest[0][0].toUpperCase())
  console.log("pirmo galas", Atest[0].slice(1))
  console.log("sujungiam:", Atest[0][0].toUpperCase()+Atest[0].slice(1))
+
+
+
+ function divisors(integer) {
+  let arr =[];
+ 
+  for(let i=integer-1; i>1; i--){
+    if(Number.isInteger(integer/i)){
+        arr.push(i)
+        return arr.sort(function(a, b){return a-b})
+    }else if(arr == []){
+    return `${integer} is prime`
+      
+    
+  }
+    }
+  }

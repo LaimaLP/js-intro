@@ -14,10 +14,10 @@
      "method:array":"nodemon ./method/array.js",
     "method:number":"nodemon ./method/number.js",
     "codewars":"nodemon ./palyginimas/codewars.js",
-    "ciklai" : "nodemon ./palyginimas/loops.js",
-    "object-loops" : "nodemon ./palyginimas/object-loops.js",
+    "loops" : "nodemon ./ciklas/loops.js",
+    "object-loops" : "nodemon ./ciklas/object-loops.js",
 
-    "for" : "nodemon ./palyginimas/for.js",
+    "for" : "nodemon ./ciklas/for.js",
     "operatoriai": "nodemon ./palyginimas/operatoriai.js",
     "namuDarbai": "nodemon ./palyginimas/namuDarbai.js",
     "if": "nodemon ./palyginimas/if.js",

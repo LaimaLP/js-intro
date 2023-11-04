@@ -1,5 +1,13 @@
+console.clear()
 const marks = [10, 2, 8, 4, 6]
+
 let sumFor=0;
+
+for(let i=0; i<marks.length; i++){
+    const mark = marks[i];
+    sumFor += mark;
+}
+console.log('FOR: sum =', sumFor);
 
 let sumForOf = 0;
 for(const mark of marks){
@@ -11,7 +19,7 @@ console.log('FOR-OF: sum =', sumForOf);
 
 //while
 
-
+ 
 let sumWhile =0;
 let iWhile= 0;
 
