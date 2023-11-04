@@ -168,3 +168,38 @@ console.log("*", red6)
 
 const red4 = [1,2,3,4].reduce((t, n)=>t*n, 1);
 console.log("*", red4)
+
+
+console.clear()
+
+const students = [
+    {name: 'Maryte', marks: [88, "asd", true, 100, 2, 5, 8],},
+
+    {name: 'Jonas', marks: [88, "asd", [], 100, 2, 9, 3],},
+
+    {name: 'Ona', marks: [88, Infinity, 100, 20, 15],},
+
+    {name: 'Petras', marks: [88, null, 100, 2, 0],}
+]
+
+const teacher = students
+    .map(student => (
+        {
+            ...student,
+            marks: student.marks
+                  .filter(n => Number.isInteger(n) && n>0 && n<11)
+               
+        }
+    ))
+    .map(student => (
+        {
+            ...student,
+            marks: student.marks,
+            total: student.marks.reduce((t ,n) => t + n, 0),
+            average: student.marks.reduce((t ,n) => t + n, 0)/ student.marks.length || -1
+        }
+    ))
+    .sort((s1, s2)=> s1.average - s2.average)
+    .map(student => `${student.name}: ${student.average === -1? "Neutri pazymiu" : Math.round(student.average)};`)
+    .join("\n");
+console.log(teacher)
