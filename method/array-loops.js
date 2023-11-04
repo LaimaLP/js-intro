@@ -78,3 +78,93 @@ const goodMarksOnly3 = badMarks
 
 
 console.log("goodMarksOnly3", goodMarksOnly3)
+
+const stringList = ["a", "A", "b", "B", "ab", "AB", "labas"]
+console.log(stringList)
+
+const numberList = [10,2,8,4,6,20]
+numberList.sort()
+console.log(numberList)
+numberList.sort((a,b)=>a-b)
+console.log(numberList)
+
+numberList.sort((a,b)=>b-a)
+console.log(numberList)
+//////////////////
+
+const family = [
+    {name: 'Maryte', age: 88},
+    {name: 'Jonas', age: 99},
+        {name: 'Ona', age: 66},
+    {name: 'Petras', age: 77},
+
+];
+const fancyFamily = family
+    .sort((a,b)=>a.age-b.age)
+    .map(user => user.name)
+    .join(", ") + ".";
+
+
+console.log("fancyFamily:",fancyFamily)
+
+//---------
+family.sort((a,b)=>a.age-b.age);
+console.log(family)
+//---------
+const namesMap = family.map(user => user.name);
+const familyString2 = namesMap.join(", ")+ ".";
+console.log(familyString2)
+
+//---------
+const  names =[];
+for(const user of family){
+    names.push(user.name);
+}
+console.log(names)
+
+const familyString = names.join(", ")+ ".";
+console.log(familyString)
+
+console.clear()
+
+const pazymiai = [10,2,8,4,6];
+console.log(pazymiai)
+
+let pazymiuSuma = 0;
+for(const pazymys of pazymiai){
+    pazymiuSuma += pazymys
+}
+
+const vidurkis = pazymiuSuma/pazymiai.length;
+
+console.log("Vidurkis:", vidurkis)
+
+function redFunc(total, number){
+    return total + number
+}
+const redSum = pazymiai.reduce(redFunc)
+console.log(redSum)
+
+const redSum2 = pazymiai.reduce((t, n)=> t + n)
+console.log(redSum2)
+
+const redSum3 = pazymiai.reduce((t, n)=> t + n, 0)
+console.log(redSum3)
+
+const red1 = [1,2,3,4].reduce((t, n)=>t+n);
+console.log("+", red1)
+
+const red2 = [1,2,3,4].reduce((t, n)=>t+n, 0);
+console.log("+", red2)
+
+const red5 = [1,2,3,4].reduce((t, n)=>t-n);
+console.log("-", red5) 
+
+const red3 = [1,2,3,4].reduce((t, n)=>t-n, 0);
+console.log("-", red3)
+
+const red6 = [1,2,3,4].reduce((t, n)=>t*n, 0);
+console.log("*", red6)
+
+const red4 = [1,2,3,4].reduce((t, n)=>t*n, 1);
+console.log("*", red4)
