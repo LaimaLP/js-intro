@@ -26,6 +26,8 @@
     "ternary": "nodemon ./palyginimas/ternary.js",
     "function": "nodemon ./funkcijos/function.js",
     "object": "nodemon ./kintamieji/object.js",
+    "destruct": "nodemon ./kintamieji/destruct.js",
+
     "array": "nodemon ./kintamieji/array.js",
     "boolean": "nodemon ./kintamieji/boolean.js",
     "string": "nodemon ./kintamieji/string.js",
