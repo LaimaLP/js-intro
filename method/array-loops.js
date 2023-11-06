@@ -203,3 +203,49 @@ const teacher = students
     .map(student => `${student.name}: ${student.average === -1? "Neutri pazymiu" : Math.round(student.average)};`)
     .join("\n");
 console.log(teacher)
+console.clear()
+console.log("xxxxxxxxxxxxxxxxxxxxxx")
+
+
+let array = [10, 2, 8];
+min2 = Math.min(...array)
+console.log("min2:",min2)
+
+let arr = [7, -5, -10]
+
+function gimme (triplet){
+ console.log("triplet:", triplet)
+    let  min = Math.min(...triplet)
+    let max = Math.max(...triplet)
+    let minPozicija = triplet.indexOf(min)
+    let maxPozicija = triplet.indexOf(max)
+
+    if(minPozicija===0 && maxPozicija===1 || minPozicija===1 && maxPozicija===0 ){
+        return 2
+    }else if(minPozicija===2 && maxPozicija===0 || minPozicija===0 && maxPozicija===2 ){
+        return 1
+    }else if(minPozicija===1 && maxPozicija===2 || minPozicija===2 && maxPozicija===1){
+        return 0
+    }
+}
+
+console.log("func:", gimme(arr))
+
+
+console.log(Math.floor(17/7))
+
+
+function freedPrisoners(prison){
+    let count = 0
+    if(prison[0]==="false"){
+      return 0;
+    }else{
+      for(let i=1; i<prison.length; i++){
+        if(prison[i] !== prison[i+1]){
+          count++
+        }else{
+          return count
+        }
+    }
+    }
+  }
