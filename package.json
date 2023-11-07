@@ -25,6 +25,9 @@
     "if": "nodemon ./palyginimas/if.js",
     "ternary": "nodemon ./palyginimas/ternary.js",
     "function": "nodemon ./funkcijos/function.js",
+    "class": "nodemon ./funkcijos/class.js",
+    "class-extends": "nodemon ./funkcijos/class-extends.js",
+
     "object": "nodemon ./kintamieji/object.js",
     "destruct": "nodemon ./kintamieji/destruct.js",
 

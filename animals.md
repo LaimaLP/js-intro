@@ -28,3 +28,8 @@
         - Shark
             -constructor: name, color, legsCount, canFly, canSwim, canTalk
             -methods: introduce, voice, isHungry
+
+            Animal
+
+
+
