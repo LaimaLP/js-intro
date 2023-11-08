@@ -11,6 +11,7 @@
     "uzd:mentoriaus3":"nodemon ./uzd/mentoriaus3.js",
     "uzd:vardas":"nodemon ./uzd/vardas.js",
     "method:array-loops":"nodemon ./method/array-loops.js",
+    "spread":"nodemon ./method/spread.js",
 
      "method:string":"nodemon ./method/string.js",
      "method:array":"nodemon ./method/array.js",
